@@ -9,7 +9,7 @@ export default function ContactList() {
 
   const filterContacts  = () => {
    
-      contacts.filter(contact =>
+   return   contacts.filter(contact =>
         contact.name.toLowerCase().includes(filter.toLowerCase())
       );
   };
