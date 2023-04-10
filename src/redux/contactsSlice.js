@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import {persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
-const initialState = [];
+const initialState ={items: []};
 const contactsSlice = createSlice({
   name: 'contacts',
   initialState,

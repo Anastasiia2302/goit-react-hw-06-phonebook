@@ -1,5 +1,4 @@
 import { FilterInput, FilterLabel, WrapFilter } from 'components/PhoneBook.styled';
-import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import  { filterContacts } from 'redux/filterSlice';
 
@@ -19,7 +18,4 @@ export default function Filter() {
   );
 }
 
-Filter.propTypes = {
-  value: PropTypes.string.isRequired,
-  onFilter: PropTypes.func.isRequired,
-};
+

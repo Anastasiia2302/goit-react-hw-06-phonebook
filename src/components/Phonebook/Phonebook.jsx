@@ -1,8 +1,15 @@
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { customAlphabet } from 'nanoid';
-import PropTypes from 'prop-types';
-import { Btn, ErrorMes, Forma, Input, Label, Wrap } from 'components/PhoneBook.styled';
+
+import {
+  Btn,
+  ErrorMes,
+  Forma,
+  Input,
+  Label,
+  Wrap,
+} from 'components/PhoneBook.styled';
 import { useDispatch } from 'react-redux';
 import { addContacts } from 'redux/contactsSlice';
 
@@ -54,5 +61,3 @@ export default function Phonebook() {
     </Formik>
   );
 }
-
-Phonebook.propTypes = { onSubmit: PropTypes.func.isRequired };
