@@ -13,7 +13,7 @@ export default function Filter() {
         type="text"
         name="filter"
         id="filter"
-        onChange={e => dispatch(filterContacts(e.target.value))}
+        onInput={e => dispatch(filterContacts(e.target.value))}
       />
     </WrapFilter>
   );
